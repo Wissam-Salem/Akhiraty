@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./SurahPage.css";
 import Header from "../../components/Header/Header";
 import axios from "axios";
 import { useParams } from "react-router-dom";
