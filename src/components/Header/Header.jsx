@@ -8,8 +8,6 @@ import {
   faClose,
   faHandHoldingHeart,
   faHouse,
-  faMoneyBillWheat,
-  faMusic,
   faSortDown,
 } from "@fortawesome/free-solid-svg-icons";
 

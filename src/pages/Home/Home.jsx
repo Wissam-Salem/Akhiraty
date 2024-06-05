@@ -21,9 +21,9 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-3">
-          <Card text="+1200 مكتبة صوتية" pic="../assets/album.svg" />
+          <Card text="مكتبة صوتية بمختلف القراءات" pic="../assets/album.svg" />
           <Card text="أذكار المسلم" pic="../assets/muslim.svg" />
-          <Card text="القرآن بكل القراءات" pic="../assets/logo3.png" />
+          <Card text="القرآن كامل" pic="../assets/logo3.png" />
         </div>
       </div>
 
@@ -46,13 +46,13 @@ export default function Home() {
           <p>كل الحقوق محفوظة ل MrValid</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a href="#">
+          <a href="https://x.com/Wissamsalem10">
             <img className="w-8" src="../assets/twitter.png" alt="" />
           </a>
           <a href="#">
             <img className="w-8" src="../assets/instagram.png" alt="" />
           </a>
-          <a href="#">
+          <a href="https://github.com/Wissam-Salem">
             <img className="w-8" src="../assets/github.png" alt="" />
           </a>
         </nav>
