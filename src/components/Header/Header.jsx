@@ -8,6 +8,7 @@ import {
   faClose,
   faHandHoldingHeart,
   faHouse,
+  faRadio,
   faSortDown,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -92,6 +93,9 @@ export default function Header() {
               <a href="/azkar">الأذكار</a>
             </li>
             <li>
+              <a href="/reciters">إذاعة القرآن</a>
+            </li>
+            <li>
               <a href="/support_us">ادعمنا</a>
             </li>
           </ul>
@@ -168,6 +172,12 @@ export default function Header() {
                   style={{ color: "#14532d" }}
                 />
                 الأذكار
+              </a>
+            </li>
+            <li>
+              <a href="/reciters">
+                <FontAwesomeIcon icon={faRadio} style={{ color: "#14532d" }} />
+                إذاعة القرآن
               </a>
             </li>
             <li>

@@ -5,6 +5,7 @@ import App from "../../App";
 export const SurahsContext = createContext(null);
 export default function Context() {
   const [surahs, setSurahs] = useState([]);
+  const [audios, setAudios] = useState([]);
   const [hadith, setHadith] = useState("");
 
   const constant = 0;
@@ -31,8 +32,16 @@ export default function Context() {
       });
   }, []);
 
+  useEffect(() => {
+    axios.get("https://data-rosy.vercel.app/radio.json").then((res) => {
+      console.log(res.data.radios);
+      setAudios(res.data.radios);
+      console.log(audios); 
+    });
+  }, []);
+
   return (
-    <SurahsContext.Provider value={{ surahs, hadith }}>
+    <SurahsContext.Provider value={{ surahs, hadith, audios }}>
       <App />
     </SurahsContext.Provider>
   );

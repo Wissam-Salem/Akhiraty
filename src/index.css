@@ -22,6 +22,15 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: Arabic;
+  src: url("C:/Users/wisam/Desktop/quraan-app/client/public/assets/DTHULUTH-II-1.ttf");
+}
+
+.reciter {
+  font-family: Arabic;
+}
+
 .start-hadith {
   font-family: "Cairo";
 }

@@ -7,6 +7,7 @@ import SupportUs from "./pages/SupportUs/SupportUs";
 import Azkar from "./pages/Azkar/Azkar";
 import DayAzkar from "./pages/DayAzkar/DayAzkar";
 import NightZekr from "./pages/NightZekr/NightZekr";
+import Reciters from "./pages/Reciters/Reciters";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/azkar" element={<Azkar />} />
         <Route path="/day_zekr" element={<DayAzkar />} />
         <Route path="/night_zekr" element={<NightZekr />} />
+        <Route path="/reciters" element={<Reciters />} />
         <Route path="/support_us" element={<SupportUs />} />
       </Routes>
     </BrowserRouter>
