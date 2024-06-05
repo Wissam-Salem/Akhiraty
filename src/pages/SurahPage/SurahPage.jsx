@@ -4,7 +4,6 @@ import Header from "../../components/Header/Header";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Ayah from "../../components/Ayah/Ayah";
-import quran from "quran_sharif";
 
 export default function SurahPage() {
   const [verses, setVerses] = useState([]);
