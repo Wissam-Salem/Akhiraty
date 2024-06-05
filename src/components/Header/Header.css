@@ -1,0 +1,18 @@
+.logo-title {
+    font-family: "Reem Kufi";
+}
+
+.mobile-menu {
+    transform: translateY(0);
+    animation: swipeUp .3s ease-in-out;
+}
+
+@keyframes swipeUp {
+    from {
+        transform: translateY(180px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

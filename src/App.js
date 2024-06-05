@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home/Home";
+import Meccan from "./pages/Surahs/Meccan/Meccan";
+import Madinan from "./pages/Surahs/Madinan/Madinan";
+import SurahPage from "./pages/SurahPage/SurahPage";
+import SupportUs from "./pages/SupportUs/SupportUs";
+import Azkar from "./pages/Azkar/Azkar";
+import DayAzkar from "./pages/DayAzkar/DayAzkar";
+import NightZekr from "./pages/NightZekr/NightZekr";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/surahs/meccan" element={<Meccan />} />
+        <Route path="/surahs/madinan" element={<Madinan />} />
+        <Route path="/:revelation/:id" element={<SurahPage />} />
+        <Route path="/azkar" element={<Azkar />} />
+        <Route path="/day_zekr" element={<DayAzkar />} />
+        <Route path="/night_zekr" element={<NightZekr />} />
+        <Route path="/support_us" element={<SupportUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

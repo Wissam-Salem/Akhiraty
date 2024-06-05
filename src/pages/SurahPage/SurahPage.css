@@ -1,0 +1,4 @@
+.page {
+    border: 20px solid transparent;
+    border-image: url("C:/Users/wisam/Desktop/quraan-app/client/public/assets/quraan-page-border.png") 50 round;
+}
