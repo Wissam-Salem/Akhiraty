@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../../components/Header/Header";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 export default function NightZekr() {
   const [nightAzkar, setNightAzkar] = useState([]);
@@ -19,6 +20,9 @@ export default function NightZekr() {
 
   return (
     <div>
+      <Helmet>
+        <title>أذكار المساء</title>
+      </Helmet>
       <Header />
       <div dir="rtl">
         {nightAzkar.map((zekr) => {

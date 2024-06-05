@@ -1,10 +1,14 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Card from "../../components/Card/Card";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
     <div className="relative">
+      <Helmet>
+        <title>آخرتي | الرئيسية</title>
+      </Helmet>
       <Header />
       <div className="flex flex-col gap-5 mt-1">
         <div

@@ -2,12 +2,17 @@ import React, { useContext } from "react";
 import Header from "../../../components/Header/Header";
 import { SurahsContext } from "../../../components/SurahsContext/Context";
 import Surah from "../../../components/Surah/Surah";
+import { Helmet } from "react-helmet";
 
 export default function Madinan() {
   const { surahs } = useContext(SurahsContext);
 
   return (
     <div>
+      <Helmet>
+        <title>السور المدنية</title>
+        <link rel="icon" href="../assets/logo2.png" />
+      </Helmet>
       <Header />
       <div
         className="w-full h-fit grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-x-5 gap-y-3 p-3"

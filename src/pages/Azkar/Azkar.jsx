@@ -2,12 +2,17 @@ import React, { useContext } from "react";
 import Header from "../../components/Header/Header";
 import ZekrType from "../../components/ZekrType/ZekrType";
 import { SurahsContext } from "../../components/SurahsContext/Context";
+import { Helmet } from "react-helmet";
 
 export default function Azkar() {
   const { hadith } = useContext(SurahsContext);
 
   return (
     <div>
+      <Helmet>
+        <title>الأذكار</title>
+        <link rel="icon" href="./assets/logo2.png" />
+      </Helmet>
       <Header />
       <div className="flex gap-5 px-5 mt-5">
         <ZekrType type="moon" time="المساء" zekrPage="/night_zekr" />

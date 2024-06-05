@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../../components/Header/Header";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 export default function DayAzkar() {
   const [dayAzkar, setDayAzkar] = useState([]);
@@ -19,6 +20,10 @@ export default function DayAzkar() {
 
   return (
     <div>
+      <Helmet>
+        <title>أذكار الصباح</title>
+        <link rel="icon" href="./assets/logo2.png" />
+      </Helmet>
       <Header />
       <div dir="rtl">
         {dayAzkar.map((zekr) => {
