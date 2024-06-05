@@ -21,9 +21,9 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-3">
-          <Card text="مكتبة صوتية بمختلف القراءات" pic="../assets/album.svg" />
+          <Card text="مكتبة صوتية شاملة" pic="../assets/album.svg" />
           <Card text="أذكار المسلم" pic="../assets/muslim.svg" />
-          <Card text="القرآن كامل" pic="../assets/logo3.png" />
+          <Card text="القرآن الكريم كاملاً" pic="../assets/logo3.png" />
         </div>
       </div>
 
@@ -52,7 +52,10 @@ export default function Home() {
           <a href="#">
             <img className="w-8" src="../assets/instagram.png" alt="" />
           </a>
-          <a href="https://github.com/Wissam-Salem">
+          <a
+            className="bg-white w-fit rounded-[50%]"
+            href="https://github.com/Wissam-Salem"
+          >
             <img className="w-8" src="../assets/github.png" alt="" />
           </a>
         </nav>
