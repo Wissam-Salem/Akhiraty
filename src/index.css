@@ -28,9 +28,19 @@ code {
   src: url("./DTHULUTH-II-1.ttf");
 }
 
+@font-face {
+  font-family: Othmani;  
+  font-display: auto;
+  src: url("./amiri_quran.ttf");
+}
+
+.ayah {
+  font-family: Othmani;
+  position: relative;
+}
+
 .reciter {
   font-family: Arabic;
-
 }
 
 .start-hadith {

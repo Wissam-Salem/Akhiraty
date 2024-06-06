@@ -43,14 +43,19 @@ export default function SurahPage() {
         <link rel="icon" href="./assets/logo2.png" />
       </Helmet>
       <Header />
-      <div className="h-fit flex flex-col items-center gap-2 p-5">
-        {[...Array(verses.length).keys()].map((key) => (
-          <Ayah
-            image={`//c22506.r6.cf1.rackcdn.com/${id}_${key + 1}.png`}
-            ayah_id={key}
-            key={key}
-          />
-        ))}
+      <div className="h-fit flex flex-col items-center text-center gap-5 pt-3 pb-16 px-5 max-sm:px-3 ta">
+        {verses.map((verse) => {
+          return (
+            <Ayah
+              ayah={verse.text_indopak}
+              ayah_id={verse.verse_key.substr(
+                verse.verse_key.indexOf(":") + 1,
+                verse.verse_key.length
+              )}
+              key={verse.id}
+            />
+          );
+        })}
       </div>
     </div>
   );
