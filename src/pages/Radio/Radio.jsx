@@ -12,6 +12,7 @@ import {
   faVolumeMute,
 } from "@fortawesome/free-solid-svg-icons";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Radio() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -70,6 +71,9 @@ export default function Radio() {
 
   return (
     <div>
+      <Helmet>
+        <title>{radios?.radios[id - 1].name}</title>
+      </Helmet>
       <Header />
       <div className="flex justify-center items-center h-[calc(100vh-300px)] max-sm:h-[calc(100vh-400px)]">
         <div className="relative w-[32rem] h-96 max-sm:w-[22rem] max-sm:h-80 rounded-md flex flex-col items-center bg-green-700">
