@@ -46,7 +46,7 @@ export default function SurahPage() {
       <div className="h-fit flex flex-col items-center gap-2 p-5">
         {[...Array(verses.length).keys()].map((key) => (
           <Ayah
-            image={`http://c22506.r6.cf1.rackcdn.com/${id}_${key + 1}.png`}
+            image={`//c22506.r6.cf1.rackcdn.com/${id}_${key + 1}.png`}
             ayah_id={key}
             key={key}
           />
