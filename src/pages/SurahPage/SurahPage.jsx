@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet";
 export default function SurahPage() {
   const [verses, setVerses] = useState([]);
   const [surahName, setSurahName] = useState("");
-  const [ayas, setAyahs] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {

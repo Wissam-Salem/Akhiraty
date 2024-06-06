@@ -1,11 +1,8 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import { useQuery } from "react-query";
 import Reciter from "../../components/Reciter/Reciter";
-import { fetchFn } from "../../components/SurahsContext/FetchQuery";
 
 export default function Reciters() {
-
   return (
     <div>
       <Header />

@@ -6,7 +6,6 @@ import {
   faBookOpenReader,
   faBookQuran,
   faClose,
-  faHandHoldingHeart,
   faHouse,
   faRadio,
   faSortDown,
