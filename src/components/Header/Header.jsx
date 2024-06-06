@@ -95,9 +95,6 @@ export default function Header() {
             <li>
               <a href="/reciters">إذاعة القرآن</a>
             </li>
-            <li>
-              <a href="/support_us">ادعمنا</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -178,15 +175,6 @@ export default function Header() {
               <a href="/reciters">
                 <FontAwesomeIcon icon={faRadio} style={{ color: "#14532d" }} />
                 إذاعة القرآن
-              </a>
-            </li>
-            <li>
-              <a href="/support_us">
-                <FontAwesomeIcon
-                  icon={faHandHoldingHeart}
-                  style={{ color: "#14532d" }}
-                />
-                ادعمنا
               </a>
             </li>
           </ul>

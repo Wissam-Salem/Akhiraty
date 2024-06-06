@@ -3,7 +3,6 @@ import Home from "./pages/Home/Home";
 import Meccan from "./pages/Surahs/Meccan/Meccan";
 import Madinan from "./pages/Surahs/Madinan/Madinan";
 import SurahPage from "./pages/SurahPage/SurahPage";
-import SupportUs from "./pages/SupportUs/SupportUs";
 import Azkar from "./pages/Azkar/Azkar";
 import DayAzkar from "./pages/DayAzkar/DayAzkar";
 import NightZekr from "./pages/NightZekr/NightZekr";
@@ -26,7 +25,6 @@ function App() {
           <Route path="/night_zekr" element={<NightZekr />} />
           <Route path="/reciters" element={<Reciters />} />
           <Route path="/radio/:id" element={<Radio />} />
-          <Route path="/support_us" element={<SupportUs />} />
         </Routes>
       </QueryClientProvider >
     </BrowserRouter>

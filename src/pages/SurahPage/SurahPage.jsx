@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 export default function SurahPage() {
   const [verses, setVerses] = useState([]);
   const [surahName, setSurahName] = useState("");
+  const [ayas, setAyahs] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -43,19 +44,14 @@ export default function SurahPage() {
         <link rel="icon" href="./assets/logo2.png" />
       </Helmet>
       <Header />
-      <div className="h-fit flex flex-col items-center gap-2 py-5">
-        {verses.map((ayah) => {
-          return (
-            <Ayah
-              text={ayah.text_indopak}
-              ayah_id={ayah.verse_key.substr(
-                ayah.verse_key.indexOf(":") + 1,
-                ayah.verse_key.length + 1
-              )}
-              key={ayah.id}
-            />
-          );
-        })}
+      <div className="h-fit flex flex-col items-center gap-2 p-5">
+        {[...Array(verses.length).keys()].map((key) => (
+          <Ayah
+            image={`http://c22506.r6.cf1.rackcdn.com/${id}_${key + 1}.png`}
+            ayah_id={key}
+            key={key}
+          />
+        ))}
       </div>
     </div>
   );

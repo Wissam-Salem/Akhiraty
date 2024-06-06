@@ -15,6 +15,7 @@ export default function Context() {
       .get("https://api.quran.com/api/v4/chapters")
       .then((res) => {
         setSurahs(res.data.chapters);
+        console.log(res.data.chapters);
       })
       .catch((err) => {
         console.log(err);
@@ -31,7 +32,6 @@ export default function Context() {
         setHadith(res.data.items[randomNumber].arab);
       });
   }, []);
-
 
   return (
     <SurahsContext.Provider value={{ surahs, hadith, audios }}>

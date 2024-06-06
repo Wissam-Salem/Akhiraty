@@ -75,8 +75,8 @@ export default function Radio() {
         <title>{radios?.radios[id - 1].name}</title>
       </Helmet>
       <Header />
-      <div className="flex justify-center items-center h-[calc(100vh-300px)] max-sm:h-[calc(100vh-400px)]">
-        <div className="relative w-[32rem] h-96 max-sm:w-[22rem] max-sm:h-80 rounded-md flex flex-col items-center bg-green-700">
+      <div className="flex justify-center items-center h-[calc(100vh-300px)] max-sm:h-[calc(100vh-330px)]">
+        <div className="relative w-[32rem] h-96 max-sm:w-[22rem] max-sm:h-80 rounded-md flex flex-col items-center bg-[#646f4b]">
           <a
             href="#"
             className="absolute right-0 m-5"
