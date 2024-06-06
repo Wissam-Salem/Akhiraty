@@ -8,22 +8,29 @@ import Azkar from "./pages/Azkar/Azkar";
 import DayAzkar from "./pages/DayAzkar/DayAzkar";
 import NightZekr from "./pages/NightZekr/NightZekr";
 import Reciters from "./pages/Reciters/Reciters";
+import { QueryClient, QueryClientProvider } from "react-query";
+import Radio from "./pages/Radio/Radio";
 
 function App() {
+  const queryClient = new QueryClient();
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/surahs/meccan" element={<Meccan />} />
-        <Route path="/surahs/madinan" element={<Madinan />} />
-        <Route path="/:revelation/:id" element={<SurahPage />} />
-        <Route path="/azkar" element={<Azkar />} />
-        <Route path="/day_zekr" element={<DayAzkar />} />
-        <Route path="/night_zekr" element={<NightZekr />} />
-        <Route path="/reciters" element={<Reciters />} />
-        <Route path="/support_us" element={<SupportUs />} />
-      </Routes>
+      <QueryClientProvider client={queryClient}>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/surahs/meccan" element={<Meccan />} />
+          <Route path="/surahs/madinan" element={<Madinan />} />
+          <Route path="/:revelation/:id" element={<SurahPage />} />
+          <Route path="/azkar" element={<Azkar />} />
+          <Route path="/day_zekr" element={<DayAzkar />} />
+          <Route path="/night_zekr" element={<NightZekr />} />
+          <Route path="/reciters" element={<Reciters />} />
+          <Route path="/radio/:id" element={<Radio />} />
+          <Route path="/support_us" element={<SupportUs />} />
+        </Routes>
+      </QueryClientProvider >
     </BrowserRouter>
+
   );
 }
 

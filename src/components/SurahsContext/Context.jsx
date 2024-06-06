@@ -32,13 +32,6 @@ export default function Context() {
       });
   }, []);
 
-  useEffect(() => {
-    axios.get("https://data-rosy.vercel.app/radio.json").then((res) => {
-      console.log(res.data.radios);
-      setAudios(res.data.radios);
-      console.log(audios); 
-    });
-  }, []);
 
   return (
     <SurahsContext.Provider value={{ surahs, hadith, audios }}>

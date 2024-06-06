@@ -23,12 +23,14 @@ code {
 }
 
 @font-face {
-  font-family: Arabic;
+  font-family: Arabic;  
+  font-display: auto;
   src: url("./DTHULUTH-II-1.ttf");
 }
 
 .reciter {
   font-family: Arabic;
+
 }
 
 .start-hadith {
