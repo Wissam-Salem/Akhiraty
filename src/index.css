@@ -24,13 +24,13 @@ code {
 
 @font-face {
   font-family: Arabic;  
-  font-display: auto;
+  font-display: fallback;
   src: url("./DTHULUTH-II-1.ttf");
 }
 
 @font-face {
   font-family: Othmani;  
-  font-display: auto;
+  font-display: fallback;
   src: url("./amiri_quran.ttf");
 }
 
