@@ -23,12 +23,7 @@ export default function Radio() {
   const line = useRef(null);
   const { id } = useParams();
 
-  const {
-    data: radios,
-    isLoading,
-    error,
-    isError,
-  } = useQuery({
+  const { data: radios, isLoading } = useQuery({
     queryFn: () => fetchFn(),
     queryKey: ["radioKey"],
   });
@@ -45,13 +40,17 @@ export default function Radio() {
     }
   };
 
-  const handlePlay = () => {
+  let handlePlay = () => {
     if (audioPlayer.current.paused === true) {
-      audioPlayer.current.play();
-      setPlayIcon(faPause);
+      setTimeout(() => {
+        audioPlayer.current.play();
+        setPlayIcon(faPause);
+      }, 500);
     } else {
-      audioPlayer.current.pause();
-      setPlayIcon(faPlay);
+      setTimeout(() => {
+        audioPlayer.current.pause();
+        setPlayIcon(faPlay);
+      }, 500);
     }
   };
 
@@ -72,7 +71,7 @@ export default function Radio() {
   return (
     <div>
       <Helmet>
-        <title>{radios?.radios[id - 1].name}</title>
+        <title>{radios?.radios[id - 1]?.name}</title>
       </Helmet>
       <Header />
       <div className="flex justify-center items-center h-[calc(100vh-300px)] max-sm:h-[calc(100vh-330px)]">
@@ -115,7 +114,12 @@ export default function Radio() {
               >
                 <FontAwesomeIcon icon={faBackward} color="white" size="2xl" />
               </a>
-              <a href="#">
+              <a
+                href="#"
+                onClick={() => {
+                  handlePlay();
+                }}
+              >
                 <FontAwesomeIcon icon={playIcon} color="white" size="2xl" />
               </a>
               <a

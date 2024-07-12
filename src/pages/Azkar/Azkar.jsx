@@ -5,7 +5,7 @@ import { SurahsContext } from "../../components/SurahsContext/Context";
 import { Helmet } from "react-helmet";
 
 export default function Azkar() {
-  const { hadith } = useContext(SurahsContext);
+  let { hadith } = useContext(SurahsContext);
 
   return (
     <div>

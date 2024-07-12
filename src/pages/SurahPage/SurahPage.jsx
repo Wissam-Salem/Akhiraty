@@ -43,7 +43,7 @@ export default function SurahPage() {
         <link rel="icon" href="./assets/logo2.png" />
       </Helmet>
       <Header />
-      <div className="h-fit flex flex-col items-center text-center gap-5 pt-3 pb-16 px-5 max-sm:px-3 ta">
+      <div className="h-fit flex flex-col items-center text-center gap-5 pt-3 pb-16 px-5 max-sm:px-3">
         {verses.map((verse) => {
           return (
             <Ayah

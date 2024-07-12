@@ -31,10 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer
-        className="footer items-center p-4 text-black mt-16 bg-[#B8B42D]"
-        dir="rtl"
-      >
+      <footer className="footer items-center p-4 text-black mt-16" dir="rtl">
         <aside className="items-center grid-flow-col">
           <svg
             width="36"
@@ -50,7 +47,7 @@ export default function Home() {
           <p>كل الحقوق محفوظة ل MrValid</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a href="https://x.com/Wissamsalem10">
+          <a href="https://x.com/Wissamsalem10" target="_blank">
             <img className="w-8" src="../assets/twitter.png" alt="" />
           </a>
           <a href="#">
@@ -59,6 +56,7 @@ export default function Home() {
           <a
             className="bg-white w-fit rounded-[50%]"
             href="https://github.com/Wissam-Salem"
+            target="_blank"
           >
             <img className="w-8" src="../assets/github.png" alt="" />
           </a>
